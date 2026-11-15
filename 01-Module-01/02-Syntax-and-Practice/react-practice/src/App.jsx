@@ -10,6 +10,7 @@ Hello React!
 Inside App.jsx, write the function yourself.*/
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+import Student from "./components/student.jsx";
 function App() {
   return (
     <div>
@@ -17,6 +18,8 @@ function App() {
       <Header name="Amina" color="green" />
       <Header name="Ali" color="blue"></Header>
       <h3>Welcome to React!</h3>
+      <Student name="Saad" color="Purple" age={5}></Student>
+      <Student name="Eshal" color="Pink" age={7}></Student>
       <Footer />
     </div>
   );
