@@ -9,12 +9,14 @@ Hello React!
 
 Inside App.jsx, write the function yourself.*/
 import Header from "./Header.jsx";
+import Footer from "./Footer.jsx";
 function App() {
   return (
     <div>
       <h1>Hello React</h1>
       <Header />
       <h3>Welcome to React!</h3>
+      <Footer />
     </div>
   );
 }
