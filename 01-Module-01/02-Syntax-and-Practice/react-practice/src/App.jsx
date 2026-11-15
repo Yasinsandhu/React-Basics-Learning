@@ -10,16 +10,36 @@ Hello React!
 Inside App.jsx, write the function yourself.*/
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-import Student from "./components/student.jsx";
+import Student from "./components/Student.jsx";
+import Product from "./components/Product.jsx";
 function App() {
   return (
     <div>
       <h1>Hello React</h1>
-      <Header name="Amina" color="green" />
+      {/* <Header name="Amina" color="green" />
       <Header name="Ali" color="blue"></Header>
       <h3>Welcome to React!</h3>
       <Student name="Saad" color="Purple" age={5}></Student>
-      <Student name="Eshal" color="Pink" age={7}></Student>
+      <Student name="Eshal" color="Pink" age={7}></Student> */}
+
+      <Product
+        name="Laptop"
+        price={150000}
+        availibility={true}
+        color="blue"
+      ></Product>
+      <Product
+        name="Mobile"
+        price={85000}
+        availibility={true}
+        color="green"
+      ></Product>
+      <Product
+        name="Headphone"
+        price={5000}
+        availibility={false}
+        color="red"
+      ></Product>
       <Footer />
     </div>
   );
