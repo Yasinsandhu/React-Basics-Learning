@@ -12,10 +12,15 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Student from "./components/Student.jsx";
 import Product from "./components/Product.jsx";
-
+import { Welcome } from "./components/Welcome.jsx";
 import IntroducingJSX from "./Lessons/Module-01/JSX/IntroducingJSX.jsx";
 function App() {
-  return <IntroducingJSX />;
+  return (
+    <>
+      <IntroducingJSX />
+      <Welcome />
+    </>
+  );
 
   // const products = ["Laptop", "Mobile", "Headphone"];
   // const newName = "Saad";

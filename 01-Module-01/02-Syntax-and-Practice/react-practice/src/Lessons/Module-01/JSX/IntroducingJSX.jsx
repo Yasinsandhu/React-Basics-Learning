@@ -1,3 +1,5 @@
+import "./IntroducingJSX.css";
+
 function IntroducingJSX() {
   const studentName = "Saad";
   return (
