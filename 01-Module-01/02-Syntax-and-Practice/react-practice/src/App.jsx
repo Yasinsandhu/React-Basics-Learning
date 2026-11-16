@@ -13,16 +13,25 @@ import Footer from "./components/Footer.jsx";
 import Student from "./components/Student.jsx";
 import Product from "./components/Product.jsx";
 function App() {
+  const products = ["Laptop", "Mobile", "Headphone"];
+  const newName = "Saad";
   return (
     <div>
-      <h1>Hello React</h1>
+      <h1 className="welcome">Hello React</h1>
+      <h1>{newName}</h1>
+      <h2>{25 + 25}</h2>
+      <p>para1</p>
+      <p>para2</p>
+      <>
+        <p>para1</p>
+        <p>para2</p>
+      </>
       {/* <Header name="Amina" color="green" />
       <Header name="Ali" color="blue"></Header>
       <h3>Welcome to React!</h3>
       <Student name="Saad" color="Purple" age={5}></Student>
       <Student name="Eshal" color="Pink" age={7}></Student> */}
-
-      <Product
+      {/* <Product
         name="Laptop"
         price={150000}
         availability={true}
@@ -39,7 +48,10 @@ function App() {
         price={5000}
         availability={false}
         color="red"
-      ></Product>
+      ></Product> */}
+      {/* {products.map((product, index) => (
+        <h3 key={index}>{product}</h3>
+      ))} */}
 
       <Footer />
     </div>
