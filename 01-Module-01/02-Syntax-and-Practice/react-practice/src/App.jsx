@@ -25,21 +25,22 @@ function App() {
       <Product
         name="Laptop"
         price={150000}
-        availibility={true}
+        availability={true}
         color="blue"
       ></Product>
       <Product
         name="Mobile"
         price={85000}
-        availibility={true}
+        availability={true}
         color="green"
       ></Product>
       <Product
         name="Headphone"
         price={5000}
-        availibility={false}
+        availability={false}
         color="red"
       ></Product>
+
       <Footer />
     </div>
   );
