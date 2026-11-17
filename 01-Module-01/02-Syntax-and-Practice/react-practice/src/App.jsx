@@ -20,15 +20,19 @@ import { Greeting } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
 import { Student } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
 import { User } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
 import { Message } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
+import { Addition } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
+import { Product } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
 
 function App() {
   return (
     <>
+      <Product />
       <Welcome />
       <Greeting />
       <Student />
       <User name="Saad" />
       <Message />
+      <Addition />
     </>
   );
   // {
