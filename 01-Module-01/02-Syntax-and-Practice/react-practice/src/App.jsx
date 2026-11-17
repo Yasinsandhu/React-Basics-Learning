@@ -17,12 +17,18 @@ Hello React!
 // import { Footer } from "./components/Footer.jsx";
 import Welcome from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
 import { Greeting } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
+import { Student } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
+import { User } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
+import { Message } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
 
 function App() {
   return (
     <>
       <Welcome />
       <Greeting />
+      <Student />
+      <User name="Saad" />
+      <Message />
     </>
   );
   // {
