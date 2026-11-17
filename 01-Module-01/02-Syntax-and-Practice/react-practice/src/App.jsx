@@ -12,18 +12,24 @@ Hello React!
 // import Footer from "./components/Footer.jsx";
 // import Student from "./components/Student.jsx";
 // import Product from "./components/Product.jsx";
-import { Welcome } from "./components/Welcome.jsx";
-import IntroducingJSX from "./Lessons/Module-01/JSX/IntroducingJSX.jsx";
-import { Footer } from "./components/Footer.jsx";
+// import { Welcome } from "./components/Welcome.jsx";
+// import IntroducingJSX from "./Lessons/Module-01/JSX/IntroducingJSX.jsx";
+// import { Footer } from "./components/Footer.jsx";
+import Welcome from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
+import { Greeting } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
+
 function App() {
   return (
     <>
-      {/* <IntroducingJSX /> */}
       <Welcome />
-      <Footer />
+      <Greeting />
     </>
   );
-
+  // {
+  //   /* <IntroducingJSX />
+  //     <Welcome />
+  //     <Footer /> */
+  // }
   // const products = ["Laptop", "Mobile", "Headphone"];
   // const newName = "Saad";
   // return (

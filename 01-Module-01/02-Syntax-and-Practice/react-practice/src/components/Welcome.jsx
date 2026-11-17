@@ -1,5 +1,9 @@
-import "./Welcome.css";
+// import "./Welcome.css";
 export function Welcome() {
-  return <h2 className="welcome-title">Welcome to React!</h2>;
+  const welcomeTitleStyle = {
+    color: "Green",
+    fontSize: "35px",
+    backgroundColor: "lightyellow",
+  };
+  return <h2 style={welcomeTitleStyle}>Welcome to React!</h2>;
 }
-
