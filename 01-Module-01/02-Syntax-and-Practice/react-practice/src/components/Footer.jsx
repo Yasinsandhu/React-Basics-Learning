@@ -1,4 +1,4 @@
-function Footer() {
-  return <p>© 2026 My Website. All rights reserved.</p>;
+import "./footer.css";
+export function Footer() {
+  return <p className="footer">© 2026 My React Website</p>;
 }
-export default Footer;
