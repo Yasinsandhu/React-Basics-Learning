@@ -25,11 +25,49 @@ export const User = (props) => {
 
 export const Message = () => <h5>Keep practising React!</h5>;
 
-export const Addition = () => <div>{25 + 75}</div>;
+export const Addition = ({ num1, num2 }) => {
+  const sum = num1 + num2;
+  return (
+    <div>
+      <p>
+        {num1} + {num2} = <strong>{sum}</strong>{" "}
+      </p>
+    </div>
+  );
+};
 
 export const Product = () => {
   const products = ["Laptop", "Headphone", "Mobilephone"];
-  return products.map((item) => <h3>{item}</h3>);
+  return products.map((item) => <h3 key={item}>{item}</h3>);
+};
+
+export const StudentList = () => {
+  const students = [
+    {
+      name: "Saad",
+      age: 25,
+    },
+    {
+      name: "Eshal",
+      age: 27,
+    },
+    {
+      name: "Arwa",
+      age: 20,
+    },
+  ];
+
+  return (
+    <div>
+      <h3>Students List</h3>
+
+      {students.map((student) => (
+        <p key={student.name}>
+          Name: {student.name} - Age: {student.age}
+        </p>
+      ))}
+    </div>
+  );
 };
 
 export default Welcome;

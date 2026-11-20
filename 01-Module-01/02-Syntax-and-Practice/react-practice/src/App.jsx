@@ -22,6 +22,7 @@ import { User } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
 import { Message } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
 import { Addition } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
 import { Product } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
+import { StudentList } from "./Lessons/Module-01/ArrowFunction/ArrowFunctions";
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
       <Student />
       <User name="Saad" />
       <Message />
-      <Addition />
+      <Addition num1={25} num2={75} />
+      <StudentList />
     </>
   );
   // {
