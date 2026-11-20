@@ -22,8 +22,8 @@ export const GetImage = () => {
 };
 
 export const StudentInfo = () => {
-  let studentName = "Saad";
-  let age = 25;
+  const studentName = "Saad";
+  const age = 25;
 
   const getWelcomeMessage = () => {
     return "Dear Student! Welcome to React";
