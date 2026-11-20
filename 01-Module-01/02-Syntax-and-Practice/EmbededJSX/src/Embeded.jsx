@@ -20,3 +20,21 @@ export const GetImage = () => {
 
   return <img src={imageURL} alt="Profile" />;
 };
+
+export const StudentInfo = () => {
+  let studentName = "Saad";
+  let age = 25;
+
+  const getWelcomeMessage = () => {
+    return "Dear Student! Welcome to React";
+  };
+
+  return (
+    <div>
+      <h3>Student Information</h3>
+      <p>Name: {studentName}</p>
+      <p>Age: {age}</p>
+      <p>{getWelcomeMessage()}</p>
+    </div>
+  );
+};
