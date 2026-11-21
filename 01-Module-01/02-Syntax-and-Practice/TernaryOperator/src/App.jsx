@@ -3,6 +3,10 @@ import AgeChecker, {
   IsLogged,
   GetMessage,
   GetRandomNumber,
+  Temperature,
+  ShoppingDiscount,
+  ExampResult,
+  MembershipStatus,
 } from "./Ternary.jsx";
 
 export default function App() {
@@ -13,6 +17,10 @@ export default function App() {
       <IsLogged />
       <GetMessage />
       <GetRandomNumber />
+      <Temperature />
+      <ShoppingDiscount />
+      <ExampResult />
+      <MembershipStatus />
     </div>
   );
 }

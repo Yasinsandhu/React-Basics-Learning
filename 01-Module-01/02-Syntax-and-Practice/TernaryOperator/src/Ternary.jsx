@@ -45,3 +45,45 @@ export const GetRandomNumber = () => {
     </div>
   );
 };
+
+// Temperature checker
+export const Temperature = () => {
+  const temperature = 35;
+  return (
+    <div>
+      <p>{temperature >= 30 ? "Hot Weather" : "Normal Weather"}</p>
+    </div>
+  );
+};
+
+// Shopping discount
+export const ShoppingDiscount = () => {
+  const totalAmount = 1200;
+  return (
+    <div>
+      <p>{totalAmount >= 1000 ? "Discount Applied" : "No Discount"}</p>
+    </div>
+  );
+};
+
+// Exam result
+export const ExampResult = () => {
+  const marks = 65;
+  return (
+    <div>
+      <h2>{marks >= 50 ? "Pass" : "Fail"}</h2>
+    </div>
+  );
+};
+
+// Membership statur
+export const MembershipStatus = () => {
+  const isMember = false;
+
+  return (
+    <div>
+      <p>{isMember === true ? "Premium Member" : "Regular Member"}</p>
+    </div>
+  );
+};
+
