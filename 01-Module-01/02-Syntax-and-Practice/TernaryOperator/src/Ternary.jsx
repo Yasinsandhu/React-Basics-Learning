@@ -67,7 +67,7 @@ export const ShoppingDiscount = () => {
 };
 
 // Exam result
-export const ExampResult = () => {
+export const ExamResult = () => {
   const marks = 65;
   return (
     <div>
@@ -87,3 +87,49 @@ export const MembershipStatus = () => {
   );
 };
 
+// Functions inside JSX
+// Welcome message
+
+export const WelcomeMsg = () => {
+  const getMsg = () => {
+    return "Welcome to my React practice";
+  };
+  return <p>{getMsg()}</p>;
+};
+
+// Calculate total
+export const CalculateTotal = () => {
+  const calculate = () => {
+    return 250 + 350 + 400;
+  };
+  return (
+    <div>
+      <p>Total: {calculate()}</p>
+    </div>
+  );
+};
+
+// Random number
+export const GenerateNumber = () => {
+  const num = Math.floor(Math.random() * 20) + 1;
+  const randomNum = () => {
+    return <p>Random Number is: {num}</p>;
+  };
+  return <div>{randomNum()}</div>;
+};
+
+// Combine both concepts
+// Result message
+
+export const ResultMessage = () => {
+  const marks = 85;
+  const getResultMSg = () => {
+    return (
+      <p>
+        Result:{" "}
+        {marks >= 50 ? "Congratulation! You Passed" : "Sorry! You Failed"}
+      </p>
+    );
+  };
+  return <>{getResultMSg()}</>;
+};

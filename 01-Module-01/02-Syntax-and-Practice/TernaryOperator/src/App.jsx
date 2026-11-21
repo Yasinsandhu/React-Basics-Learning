@@ -7,6 +7,10 @@ import AgeChecker, {
   ShoppingDiscount,
   ExampResult,
   MembershipStatus,
+  WelcomeMsg,
+  CalculateTotal,
+  GenerateNumber,
+  ResultMessage,
 } from "./Ternary.jsx";
 
 export default function App() {
@@ -21,6 +25,10 @@ export default function App() {
       <ShoppingDiscount />
       <ExampResult />
       <MembershipStatus />
+      <WelcomeMsg />
+      <CalculateTotal />
+      <GenerateNumber />
+      <ResultMessage />
     </div>
   );
 }
