@@ -15,7 +15,7 @@ export const Result = () => {
 
   return (
     <div>
-      <p>{marks >= 75 ? "Pass" : "Fail"}</p>
+      <p>{marks >= 50 ? "Pass" : "Fail"}</p>
     </div>
   );
 };
@@ -31,6 +31,17 @@ export const IsLogged = () => {
 };
 
 export const GetMessage = () => {
-  return <div>"You are learning React!";</div>;
+  const learningReact = () => {
+    return "I am learning React";
+  };
+  return <div> {learningReact()}</div>;
 };
-<p>{GetMessage()}</p>;
+
+export const GetRandomNumber = () => {
+  const randomNumber = Math.floor(Math.random() * 10) + 1;
+  return (
+    <div>
+      <h3>Your random number is: {randomNumber}</h3>
+    </div>
+  );
+};
