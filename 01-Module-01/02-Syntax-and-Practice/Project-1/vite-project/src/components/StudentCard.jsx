@@ -1,9 +1,9 @@
 const StudentCard = ({ name, age, marks, isPresent, position }) => {
   return (
-    <div>
-      <h1>Student Report Card</h1>
-      <h3>School: ABC School</h3>
-      <p>Position: {position}</p>
+    <div className="student-card">
+      <h1 className="card-title">Student Report Card</h1>
+      <h3 className="school-name">School: ABC School</h3>
+      <p className="position">Position: {position}</p>
       <p>Name: {name}</p>
       <p>Age: {age}</p>
       <p>Mark: {marks}</p>

@@ -1,4 +1,5 @@
 import StudentCard from "./components/StudentCard.jsx";
+import "./App.css";
 
 function App() {
   const students = [
@@ -10,7 +11,7 @@ function App() {
   const totalStudents = students.length;
   let sortedStudents = [...students].sort((a, b) => b.marks - a.marks);
   return (
-    <div>
+    <div className="app">
       <h2>Total Students: {totalStudents}</h2>
       {sortedStudents.map((student, index) => (
         <StudentCard
