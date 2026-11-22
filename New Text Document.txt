@@ -1,0 +1,7 @@
+Practice	Time
+Review components, JSX and imports/exports	2 hours
+Practise props and expressions	3 hours
+Build Project 1: Student Report Cards	3 hours
+Build Project 2: Product Cards / Product Catalog	4 hours
+Build Project 3: Personal Profile Page	4–5 hours
+Final independent test and revision	2–3 hours
