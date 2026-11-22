@@ -8,7 +8,7 @@ function App() {
     { name: "Fatima", age: 12, marks: 82, isPresent: true },
   ];
   const totalStudents = students.length;
-
+  let sortedStudents = [...students].sort((a, b) => b.marks - a.marks);
   return (
     <div>
       <h2>Total Students: {totalStudents}</h2>
