@@ -1,3 +1,4 @@
+import { ProductCard } from "./components/ProductCard.jsx";
 function App() {
   const products = [
     {
@@ -34,7 +35,7 @@ function App() {
       name: "Shoes",
       category: "Clothing",
       price: 6000,
-      discount: 0,
+      discount: 20,
       image: "",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, facilis.",
@@ -61,6 +62,12 @@ function App() {
       availability: true,
     },
   ];
+
+  return (
+    <div>
+      <ProductCard />
+    </div>
+  );
 }
 
 export default App;
