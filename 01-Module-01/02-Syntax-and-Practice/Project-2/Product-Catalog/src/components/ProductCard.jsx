@@ -2,20 +2,53 @@ export const ProductCard = (props) => {
   let discountedPrice = props.price * (props.discount / 100);
   let finalPrice = props.price - discountedPrice;
   return (
-    <div>
-      <p>Product Name: {props.name}</p>
+    <div className="product-card">
+      <p>{props.name}</p>
       <p>Category: {props.category}</p>
-      <p>Price: {props.price}</p>
       <p>Description: {props.description}</p>
-      <img src={props.image} alt={props.name} />
-      <p>Availability: {props.availability ? "In Stock" : "Out of Stock"}</p>
-      {props.discount > 0 ? <p>On Sale</p> : null}
+      <img className="product-image" src={props.image} alt={props.name} />
+      <p>
+        Availability:{" "}
+        {props.availability ? (
+          <span style={{ color: "Green" }}>In Stock </span>
+        ) : (
+          <span style={{ color: "Red" }}>Out of Stock</span>
+        )}
+      </p>
+      {props.discount > 0 ? (
+        <p
+          style={{
+            backgroundColor: "yellow",
+            color: "black",
+            borderRadius: "6px",
+            padding: "5px 5px",
+            display: "inline-block",
+          }}
+        >
+          On Sale
+        </p>
+      ) : null}
+
       {props.discount > 0 ? (
         <>
-          <p>Discount: {discountedPrice}</p>
+          <p>
+            <del>{props.price}</del>
+            <span
+              style={{
+                color: "yellow",
+                backgroundColor: "black",
+                borderRadius: "10%",
+              }}
+            >
+              {" "}
+              {props.discount}% OFF
+            </span>
+          </p>
           <p>Final Price: {finalPrice}</p>
         </>
-      ) : null}
+      ) : (
+        <p>Price: {props.price}</p>
+      )}
     </div>
   );
 };

@@ -1,4 +1,6 @@
 import { ProductCard } from "./components/ProductCard.jsx";
+import "./App.css";
+
 function App() {
   const products = [
     {
@@ -6,7 +8,7 @@ function App() {
       category: "Electronics",
       price: 5000,
       discount: 10,
-      image: "",
+      image: "public/headphone.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, facilis.",
       availability: true,
@@ -16,17 +18,17 @@ function App() {
       category: "Clothing",
       price: 2000,
       discount: 0,
-      image: "",
+      image: "public/tshirt.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, facilis.",
-      availability: true,
+      availability: false,
     },
     {
       name: "Watch",
       category: "Accessories",
       price: 4000,
       discount: 15,
-      image: "",
+      image: "public/watch.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, facilis.",
       availability: true,
@@ -36,7 +38,7 @@ function App() {
       category: "Clothing",
       price: 6000,
       discount: 20,
-      image: "",
+      image: "public/shoes.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, facilis.",
       availability: true,
@@ -46,7 +48,7 @@ function App() {
       category: "Accessories",
       price: 3000,
       discount: 0,
-      image: "",
+      image: "public/backpack.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, facilis.",
       availability: true,
@@ -56,7 +58,7 @@ function App() {
       category: "Electronics",
       price: 3500,
       discount: 5,
-      image: "",
+      image: "public/keyboard.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, facilis.",
       availability: true,
@@ -64,7 +66,7 @@ function App() {
   ];
 
   return (
-    <div>
+    <div className="product-grid">
       {products.map((product) => (
         <ProductCard {...product} key={product.name} />
       ))}
