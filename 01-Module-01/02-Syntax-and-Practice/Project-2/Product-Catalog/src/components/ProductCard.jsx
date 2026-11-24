@@ -32,7 +32,7 @@ export const ProductCard = (props) => {
       {props.discount > 0 ? (
         <>
           <p>
-            <del>{props.price}</del>
+            <del>{props.price.toLocaleString("en-PK")}</del>
             <span
               style={{
                 color: "yellow",
@@ -44,10 +44,10 @@ export const ProductCard = (props) => {
               {props.discount}% OFF
             </span>
           </p>
-          <p>Final Price: {finalPrice}</p>
+          <p>Final Price: {finalPrice.toLocaleString("en-PK")}</p>
         </>
       ) : (
-        <p>Price: {props.price}</p>
+        <p>Price: {props.price.toLocaleString("en-PK")}</p>
       )}
     </div>
   );
