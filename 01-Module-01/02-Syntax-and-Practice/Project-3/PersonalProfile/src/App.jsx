@@ -3,6 +3,7 @@ import Contact from "./components/Contact";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import "./App.css";
 
 function App() {
   const profileData = [
@@ -30,16 +31,16 @@ function App() {
   ];
 
   return (
-    <div>
+    <div className="portfolio">
       {profileData.map((data) => (
-        <div key={data.name}>
+        <div key={data.name} className="profile-row">
           <Profile {...data} />
           <About {...data} />
-          <Skills />
-          <Projects />
-          <Contact />
         </div>
       ))}
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
 }

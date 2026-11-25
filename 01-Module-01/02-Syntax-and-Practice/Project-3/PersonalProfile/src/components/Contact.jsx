@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div>
+    <div className="contact-section">
       <h3>Contact Me</h3>
       <p>
         <a href="mailto:someone@example.com">Email</a>

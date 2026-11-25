@@ -21,15 +21,18 @@ const Projects = () => {
   ];
 
   return (
-    <div>
+    <div className="projects-section">
       <h3>My Projects</h3>
-      {projects.map((project) => (
-        <div key={project.projectName}>
-          <h4>Project Name: {project.projectName}</h4>
-          <p>{project.description}</p>
-          <img src={project.image} alt={project.projectName} />
-        </div>
-      ))}
+
+      <div className="projects-grid">
+        {projects.map((project) => (
+          <div key={project.projectName} className="project-card">
+            <h4>Project Name: {project.projectName}</h4>
+            <p>{project.description}</p>
+            <img src={project.image} alt={project.projectName} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

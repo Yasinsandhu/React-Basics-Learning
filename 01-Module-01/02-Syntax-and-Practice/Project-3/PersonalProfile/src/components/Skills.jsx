@@ -1,10 +1,12 @@
 const Skills = () => {
   let skills = ["HTML", "CSS", "JavaScript", "React"];
   return (
-    <div>
+    <div className="skills-section">
       <h3>My Skills:</h3>
       {skills.map((skill) => (
-        <p key={skill}>{skill}</p>
+        <p key={skill} className="skill-tag">
+          {skill}
+        </p>
       ))}
     </div>
   );
