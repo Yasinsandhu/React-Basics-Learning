@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Profile from "./components/Profile";
 
 function App() {
@@ -7,14 +8,14 @@ function App() {
       role: "Aspiring Front-End Developer",
       introduction:
         "I am learning web development and building projects with HTML, CSS, JavaScript and React.",
-      image: "Eshal.png",
+      image: "/Eshal.png",
     },
     {
       name: "Saad",
       role: "Aspiring Back-End Developer",
       introduction:
         "I am learning web development and building projects with HTML, CSS, JavaScript and React.",
-      image: "Saad.png",
+      image: "/Saad.png",
     },
     {
       name: "Arwa",
@@ -28,7 +29,10 @@ function App() {
   return (
     <div>
       {profileData.map((data) => (
-        <Profile {...data} key={data.name} />
+        <div key={data.name}>
+          <Profile {...data} />
+          <About {...data} />
+        </div>
       ))}
     </div>
   );
