@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Profile from "./components/Profile";
+import Skills from "./components/Skills";
 
 function App() {
   const profileData = [
@@ -32,6 +33,7 @@ function App() {
         <div key={data.name}>
           <Profile {...data} />
           <About {...data} />
+          <Skills />
         </div>
       ))}
     </div>
