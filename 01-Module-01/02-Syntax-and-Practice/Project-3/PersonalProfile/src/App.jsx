@@ -21,6 +21,12 @@ function App() {
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus harum voluptatibus, fuga quae officia repellendus. Deserunt porro quod beatae. Ipsa.",
           image: "/keyboard.jpg",
         },
+        {
+          projectName: "Product Card",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus harum voluptatibus, fuga quae officia repellendus. Deserunt porro quod beatae. Ipsa.",
+          image: "/keyboard.jpg",
+        },
       ],
       contact: {
         email: "mailto:someone@example.com",
@@ -28,20 +34,48 @@ function App() {
         github: "https://www.github.com",
       },
     },
-    // {
-    //   name: "Saad",
-    //   role: "Aspiring Back-End Developer",
-    //   introduction:
-    //     "I am learning web development and building projects with HTML, CSS, JavaScript and React.",
-    //   image: "/Saad.png",
-    // },
-    // {
-    //   name: "Arwa",
-    //   role: "Aspiring Full-Stack Developer",
-    //   introduction:
-    //     "I am learning web development and building projects with HTML, CSS, JavaScript and React.",
-    //   image: "/Arwa.png",
-    // },
+    {
+      name: "Saad",
+      role: "Aspiring Back-End Developer",
+      introduction:
+        "I am learning web development and building projects with HTML, CSS, JavaScript and React.",
+      image: "/Saad.png",
+      skills: ["HTML", "CSS", "JavaScript"],
+      projects: [
+        {
+          projectName: "Product Card",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus harum voluptatibus, fuga quae officia repellendus. Deserunt porro quod beatae. Ipsa.",
+          image: "/keyboard.jpg",
+        },
+      ],
+      contact: {
+        email: "mailto:someone@example.com",
+        linkedin: "https://www.linkedin.com",
+        github: "https://www.github.com",
+      },
+    },
+    {
+      name: "Arwa",
+      role: "Aspiring Full-Stack Developer",
+      introduction:
+        "I am learning web development and building projects with HTML, CSS, JavaScript and React.",
+      image: "/Arwa.png",
+      skills: ["HTML", "CSS", "JavaScript", "Java", "C#"],
+      projects: [
+        {
+          projectName: "Personal Profile",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus harum voluptatibus, fuga quae officia repellendus. Deserunt porro quod beatae. Ipsa.",
+          image: "/keyboard.jpg",
+        },
+      ],
+      contact: {
+        email: "mailto:someone@example.com",
+        linkedin: "https://www.linkedin.com",
+        github: "https://www.github.com",
+      },
+    },
   ];
 
   return (
@@ -51,10 +85,10 @@ function App() {
           <Profile {...data} />
           <About {...data} />
           <Contact contact={data.contact} />
+          <Skills skills={data.skills} />
+          <Projects projects={data.projects} />
         </div>
       ))}
-      <Skills />
-      <Projects />
     </div>
   );
 }
