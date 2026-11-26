@@ -1,7 +1,28 @@
 const EmployeeCard = (props) => {
   return (
     <div>
-      <p>{props.emp.jobTitle}</p>
+      <img src={props.emp.image} alt={props.emp.name} />
+      <p>Name: {props.emp.name}</p>
+      <p>Job Title: {props.emp.jobTitle}</p>
+      <p>Department: {props.emp.department}</p>
+      <p>Age: {props.emp.age}</p>
+
+      <div>
+        <h5>Skills</h5>
+        {props.emp.skills.map((skill) => (
+          <p key={props.skill}>{skill}</p>
+        ))}
+      </div>
+      <br />
+      <p>
+        Status:{" "}
+        {props.emp.isActive ? (
+          <span style={{ color: "green" }}> Active </span>
+        ) : (
+          <span style={{ color: "red" }}>Inactive </span>
+        )}
+      </p>
+      <br />
     </div>
   );
 };

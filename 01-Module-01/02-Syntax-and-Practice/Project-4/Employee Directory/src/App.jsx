@@ -7,7 +7,7 @@ function App() {
       jobTitle: "Front-End Developer",
       department: "Engineering",
       age: 18,
-      image: "",
+      image: "Arwa.png",
       skills: ["React", "JavaScript", "CSS"],
       isActive: true,
     },
@@ -16,7 +16,7 @@ function App() {
       jobTitle: "UI/UX Designer",
       department: "Design",
       age: 28,
-      image: "",
+      image: "Saad.png",
       skills: ["Figma", "Wireframing", "Prototyping"],
       isActive: false,
     },
@@ -25,14 +25,35 @@ function App() {
       jobTitle: "Backend Developer",
       department: "Engineering",
       age: 34,
-      image: "",
-      skills: ["Figma", "Wireframing", "Prototyping"],
+      image: "Eshal.png",
+      skills: ["Dhobi", "Wireframing", "Prototyping"],
+      isActive: false,
+    },
+    {
+      name: "Fatima",
+      jobTitle: "QA Engineer",
+      department: "Quality Assurance",
+      age: 34,
+      image: "Arwa.png",
+      skills: ["Testing", "Bug Tracking", "Automation"],
+      isActive: true,
+    },
+    {
+      name: "Hiba",
+      jobTitle: "Project Manager",
+      department: "Operations",
+      age: 42,
+      image: "Eshal.png",
+      skills: ["Planning", "Agile", "Communication"],
       isActive: false,
     },
   ];
 
   return (
     <div>
+      <h1>Employees Directory</h1>
+      <h5>Total Employees: {employees.length}</h5>
+      <br />
       {employees.map((employee) => (
         <div key={employee.name}>
           <EmployeeCard emp={employee} />
