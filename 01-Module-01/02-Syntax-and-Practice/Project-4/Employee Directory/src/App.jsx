@@ -1,5 +1,7 @@
+import EmployeeCard from "./components/EmployeeCard";
+
 function App() {
-  let employee = [
+  let employees = [
     {
       name: "Arwa",
       jobTitle: "Front-End Developer",
@@ -29,7 +31,15 @@ function App() {
     },
   ];
 
-  return <h1>Test here</h1>;
+  return (
+    <div>
+      {employees.map((employee) => (
+        <div key={employee.name}>
+          <EmployeeCard emp={employee} />
+        </div>
+      ))}
+    </div>
+  );
 }
 
 export default App;
