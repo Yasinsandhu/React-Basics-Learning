@@ -13,21 +13,35 @@ function App() {
       introduction:
         "I am learning web development and building projects with HTML, CSS, JavaScript and React.",
       image: "/Eshal.png",
+      skills: ["HTML", "CSS", "JavaScript", "React"],
+      projects: [
+        {
+          projectName: "Student Report Cards",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus harum voluptatibus, fuga quae officia repellendus. Deserunt porro quod beatae. Ipsa.",
+          image: "/keyboard.jpg",
+        },
+      ],
+      contact: {
+        email: "mailto:someone@example.com",
+        linkedin: "https://www.linkedin.com",
+        github: "https://www.github.com",
+      },
     },
-    {
-      name: "Saad",
-      role: "Aspiring Back-End Developer",
-      introduction:
-        "I am learning web development and building projects with HTML, CSS, JavaScript and React.",
-      image: "/Saad.png",
-    },
-    {
-      name: "Arwa",
-      role: "Aspiring Full-Stack Developer",
-      introduction:
-        "I am learning web development and building projects with HTML, CSS, JavaScript and React.",
-      image: "/Arwa.png",
-    },
+    // {
+    //   name: "Saad",
+    //   role: "Aspiring Back-End Developer",
+    //   introduction:
+    //     "I am learning web development and building projects with HTML, CSS, JavaScript and React.",
+    //   image: "/Saad.png",
+    // },
+    // {
+    //   name: "Arwa",
+    //   role: "Aspiring Full-Stack Developer",
+    //   introduction:
+    //     "I am learning web development and building projects with HTML, CSS, JavaScript and React.",
+    //   image: "/Arwa.png",
+    // },
   ];
 
   return (
@@ -36,11 +50,11 @@ function App() {
         <div key={data.name} className="profile-row">
           <Profile {...data} />
           <About {...data} />
+          <Contact contact={data.contact} />
         </div>
       ))}
       <Skills />
       <Projects />
-      <Contact />
     </div>
   );
 }

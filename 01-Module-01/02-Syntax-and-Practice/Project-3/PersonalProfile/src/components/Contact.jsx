@@ -1,13 +1,13 @@
-const Contact = () => {
+const Contact = ({ contact }) => {
   return (
     <div className="contact-section">
       <h3>Contact Me</h3>
       <p>
-        <a href="mailto:someone@example.com">Email</a>
+        <a href={contact.email}>Email</a>
         <br />
-        <a href="https://www.linkedin.com">LinkedIn</a>
+        <a href={contact.linkedin}>LinkedIn</a>
         <br />
-        <a href="https://www.github.com">Github</a>
+        <a href={contact.github}>Github</a>
       </p>
     </div>
   );
