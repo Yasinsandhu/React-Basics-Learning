@@ -1,5 +1,5 @@
 import EmployeeCard from "./components/EmployeeCard";
-
+import "./App.css";
 function App() {
   let employees = [
     {
@@ -50,10 +50,9 @@ function App() {
   ];
 
   return (
-    <div>
+    <div className="employee-directory">
       <h1>Employees Directory</h1>
       <h5>Total Employees: {employees.length}</h5>
-      <br />
       {employees.map((employee) => (
         <div key={employee.name}>
           <EmployeeCard emp={employee} />
