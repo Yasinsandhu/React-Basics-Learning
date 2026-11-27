@@ -2,7 +2,7 @@ const EmployeeCard = (props) => {
   return (
     <div className="employee-card">
       <img src={props.emp.image} alt={props.emp.name} />
-      <p>Name: {props.emp.name}</p>
+      <p> {props.emp.name}</p>
       <p>Job Title: {props.emp.jobTitle}</p>
       <p>Department: {props.emp.department}</p>
       <p>Age: {props.emp.age}</p>
