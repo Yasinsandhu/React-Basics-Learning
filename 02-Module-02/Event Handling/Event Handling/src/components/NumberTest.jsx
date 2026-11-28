@@ -50,7 +50,6 @@ const FormCheck = () => {
 export default FormCheck;
 
 // Create a CartCheck component. Use stock = 3 and requested quantity = 5. Show an error if the requested quantity exceeds stock.
-
 export const CartCheck = () => {
   const handleClick = () => {
     try {

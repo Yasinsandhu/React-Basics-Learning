@@ -6,6 +6,8 @@ import AgeCheck from "./components/NumberTest";
 import FormCheck from "./components/NumberTest";
 import { CartCheck } from "./components/NumberTest";
 import { BankCheck } from "./components/NumberTest";
+import SavedData from "./components/DataCheck";
+import SavedProfile from "./components/SavedProfile";
 
 function App() {
   return (
@@ -16,8 +18,10 @@ function App() {
       <NumberTest />
       <AgeCheck />
       <FormCheck />
-      <CartCheck />
-      <BankCheck />
+      {/* <CartCheck />
+      <BankCheck /> */}
+      <SavedData />
+      <SavedProfile />
     </div>
   );
 }
